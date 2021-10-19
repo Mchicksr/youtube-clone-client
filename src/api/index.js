@@ -1,7 +1,8 @@
 import axios from 'axios'
 import config from '../config'
 
-const API = axios.create({baseUrl:config.API_ENDPOINT})
+// const API = axios.create({baseUrl:config.API_ENDPOINT})
+const API = axios.create({baseUrl:'https://code-youtube-clone.herokuapp.com'})
 
 API.interceptors.request.use((req)=>{
     if(localStorage.getItem('profile')){
