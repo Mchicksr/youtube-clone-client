@@ -1,15 +1,10 @@
 import React from 'react';
-import { Container, Grid,Button } from '@material-ui/core'
+import { Container, Grid } from '@material-ui/core'
 import RecommendedVideos2 from './RecommendedVideos2'
 import InfoBar from './InfoBar'
-import InfoBar2 from './InfoBar2';
-import {useSelector,useDispatch} from 'react-redux'
+import {useSelector} from 'react-redux'
 import {useLocation} from 'react-router-dom'
-import PostAddIcon from '@material-ui/icons/PostAdd';
-import { likePost } from '../../actions/posts';
-import ThumbDownAltOutlined from '@material-ui/icons/ThumbDownAltOutlined';
-import moment from 'moment'
-import Likes from './Likes';
+
 
 
 
@@ -30,7 +25,6 @@ function VideoPlayer({videoId2}) {
     console.log("VideoPlayer: videoId",videoId2)
 
     const info = useSelector((state) => state.posts)
-    const dispatch = useDispatch()
     console.log('info',info)
     return (
         <>
@@ -76,4 +70,3 @@ function VideoPlayer({videoId2}) {
 export default VideoPlayer;
 
 
-{/* <iframe width="560" height="315" src="https://www.youtube.com/embed/44-Kx5ZZTsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */ }

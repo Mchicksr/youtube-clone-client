@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
-import { useDispatch,useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import FileBase from 'react-file-base64'
-import { TextField,Button,Paper,Container } from '@material-ui/core';
+import { Button,Paper,Container } from '@material-ui/core';
 
 import {updateProfile} from '../../../actions/auth'
 function Profile(props) {
     const dispatch = useDispatch()
-    const  profile = useSelector((state) => state.profile)
+    // const  profile = useSelector((state) => state.profile)
     const [updatePro, setUpdatePro] = useState({selectedFile:''})
     const user = JSON.parse(localStorage.getItem('profile'))
         // console.log('profileId',user?.result?._id)

@@ -1,10 +1,8 @@
-import react,{useEffect,useState} from 'react'
+import {useEffect,useState} from 'react'
 import './App.css';
 import Header from './components/Header'
 import SideBar from './components/SideBar'
-import RecommendedVideos from './components/reuse/RecommendedVideos'
-import {BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import SearchPage from './components/reuse/SearchPage'
+import {Switch, Route} from "react-router-dom"
 import CreateVideo from './components/reuse/CreateVideo';
 import EditVideo from './components/reuse/EditVideo';
 import { useDispatch } from 'react-redux';
@@ -20,7 +18,7 @@ function App() {
   const [videoId,setVideoId] = useState("")
   useEffect(()=>{
     dispatch(getPosts())
-  },[getPosts])
+  },[])
   console.log('App:VideoId',videoId)
 
   return (

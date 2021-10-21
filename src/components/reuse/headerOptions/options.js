@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { Button,Paper } from '@material-ui/core';
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { Button } from '@material-ui/core';
+import { useHistory} from 'react-router-dom';
 
 
 function Options({setUser}) {

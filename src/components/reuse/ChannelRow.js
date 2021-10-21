@@ -2,7 +2,6 @@ import React from 'react';
 import { Avatar } from "@material-ui/core"
 import'./ChannelRow.css'
 import VerifiedIcon from '@material-ui/icons/CheckCircleSharp';
-import VideoRow from './VideoRow'
 
 function ChannelRow({image, channel, verified, subs, NoOfVideos, description}) {
     return (

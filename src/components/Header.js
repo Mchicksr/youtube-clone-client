@@ -10,7 +10,7 @@ import { } from '../components/Header.css'
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode'
-import { Button,Paper } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import {youtube} from '../actions/youtube'
 import Options from './reuse/headerOptions/options';
 

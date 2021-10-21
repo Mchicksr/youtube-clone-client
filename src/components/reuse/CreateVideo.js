@@ -5,7 +5,7 @@ import FileBase from 'react-file-base64'
 import { deletePost } from '../../actions/posts';
 import './CreateVideo'
 
-import {createPost,updatePost} from '../../actions/posts'
+import {createPost} from '../../actions/posts'
 
 function CreateVideo({currentId, setCurrentId}) {
     const [postData, setPostData] = useState({title:'',message:'',tags:'',selectedFile:'',link:''})

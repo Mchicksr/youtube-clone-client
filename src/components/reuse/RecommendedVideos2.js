@@ -2,19 +2,18 @@ import React from 'react';
 import './RecommendedVideos'
 import VideoCard from './videoCard';
 import {useSelector} from 'react-redux'
-import {Link} from 'react-router-dom'
 import {parseQuery,getId} from '../../sample'
 
 function RecommendedVideos2({currentId, setCurrentId, setVideoId,videoId }) {
     const posts = useSelector((state)=> state.posts)
     console.log('RecommendedVideo2:Video id',videoId)
     return (
-        <div class="recommendedVideos">
+        <div className="recommendedVideos">
             <div className="recommendedVideos__videos">
                 {
                     !posts.length ? 'loading...' : (  
                        
-                        posts.map(item => (
+                        posts.map((item) => (
                     // <Link to="/play">
                             <VideoCard
                                 id = {item._id}

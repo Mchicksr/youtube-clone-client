@@ -1,20 +1,13 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import {Link,useHistory} from 'react-router-dom'
 import {Button} from '@material-ui/core'
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Avatar from "@material-ui/core/Avatar"
 import moment from 'moment'
-
-import { useDispatch } from 'react-redux';
-import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
-import { likePost } from '../../actions/posts';
-import Likes from './Likes'
-
 import "./videoCard.css"
 function VideoCard({id,image, title, channel, views, timestamp, channelImage,setCurrentId,currentId,posts,name,setVideoId,videoId,link,likes,dislikes,photoId}) {
     const user = JSON.parse(localStorage.getItem('profile'))
     let history = useHistory()
-    let dispatch = useDispatch()
     // console.log('videoCard:dislikes',dislikes)
    
     return (

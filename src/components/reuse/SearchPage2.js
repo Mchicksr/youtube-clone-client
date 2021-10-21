@@ -1,10 +1,8 @@
 import React from 'react';
 import './SearchPage.css'
 import TuneSharpIcon from '@material-ui/icons/TuneSharp';
-import ChannelRow from './ChannelRow'
 import VideoRow from './VideoRow'
 import { useSelector } from 'react-redux';
-import {Link} from 'react-router-dom'
 function SearchPage2({videoId, setVideoId}) {
     const videos = useSelector((state)=>state.youtube)
     // console.log('videos',videos)

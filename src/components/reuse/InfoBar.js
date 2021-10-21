@@ -1,7 +1,6 @@
 import React from 'react';
 import moment from 'moment'
 import {Grid,Button} from '@material-ui/core'
-import ThumbDownAltOutlined from '@material-ui/icons/ThumbDownAltOutlined';
 import PostAddIcon from '@material-ui/icons/PostAdd';
 import {useSelector,useDispatch} from 'react-redux'
 import { likePost, dislikePost } from '../../actions/posts';

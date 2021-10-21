@@ -6,7 +6,6 @@ import { deletePost,updatePost } from '../../actions/posts';
 import { useHistory } from 'react-router';
 import './CreateVideo'
 
-import {createPost} from '../../actions/posts'
 // import { updatePost } from '../../api';
 function EditVideo({currentId, setCurrentId}) {
     const [postData, setPostData] = useState({title:'',message:'',tags:'',selectedFile:''})

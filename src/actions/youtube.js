@@ -6,7 +6,9 @@ export const youtube = (inputsearch) => async (dispatch) => {
         const {data} = await api.youTube(inputsearch)
         console.log('youtube',data.items)
         dispatch({type:YOUTUBE,payload:data.items})
+
     } catch (error) {
         console.log(error)
     }
 }
+

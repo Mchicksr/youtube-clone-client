@@ -1,7 +1,6 @@
 import React from 'react';
 import ThumbUpAltOutlined from '@material-ui/icons/ThumbUpAltOutlined';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
-import {likePost} from '../../actions/posts'
 function Likes({likes,user}) {
 
     if (likes?.length > 0) {
