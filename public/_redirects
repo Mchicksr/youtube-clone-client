@@ -1,2 +1,2 @@
-/api/ * https://code-youtube-clone.herokuapp.com
+/api/ * https://code-youtube-clone.herokuapp.com/:splat 200
 /*  /index.html  200
