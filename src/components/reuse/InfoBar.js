@@ -10,7 +10,6 @@ import Dislikes from '../Dislikes';
 function InfoBar({title,views,timestamp,cId,user,likes,api,dislikes}) {
     const info = useSelector((state) => state.posts)
     const dispatch = useDispatch()
-    console.log('info',info)
     return (
         <div>
             

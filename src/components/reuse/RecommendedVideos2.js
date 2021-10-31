@@ -6,7 +6,6 @@ import {parseQuery,getId} from '../../sample'
 
 function RecommendedVideos2({currentId, setCurrentId, setVideoId,videoId }) {
     const posts = useSelector((state)=> state.posts)
-    console.log('RecommendedVideo2:Video id',videoId)
     return (
         <div className="recommendedVideos">
             <div className="recommendedVideos__videos">

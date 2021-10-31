@@ -6,10 +6,8 @@ import { Button,Paper,Container } from '@material-ui/core';
 import {updateProfile} from '../../../actions/auth'
 function Profile(props) {
     const dispatch = useDispatch()
-    // const  profile = useSelector((state) => state.profile)
     const [updatePro, setUpdatePro] = useState({selectedFile:''})
     const user = JSON.parse(localStorage.getItem('profile'))
-        // console.log('profileId',user?.result?._id)
     const userId = user?.result?._id
     const handleSubmit = async (e) => {
         e.preventDefault()

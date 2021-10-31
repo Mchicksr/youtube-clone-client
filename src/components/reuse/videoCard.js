@@ -8,7 +8,6 @@ import "./videoCard.css"
 function VideoCard({id,image, title, channel, views, timestamp, channelImage,setCurrentId,currentId,posts,name,setVideoId,videoId,link,likes,dislikes,photoId}) {
     const user = JSON.parse(localStorage.getItem('profile'))
     let history = useHistory()
-    // console.log('videoCard:dislikes',dislikes)
    
     return (
         <div className="videoCard">

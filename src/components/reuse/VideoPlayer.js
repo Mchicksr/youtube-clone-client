@@ -20,12 +20,8 @@ function VideoPlayer({videoId2}) {
     const likes = location.state?.likes
     const api = location.state?.api
     const dislikes = location.state?.dislikes
-    // console.log('VID', videoId) d
-    // console.log('Title', title)
-    console.log("VideoPlayer: videoId",videoId2)
 
     const info = useSelector((state) => state.posts)
-    console.log('info',info)
     return (
         <>
             <Grid container>

@@ -5,10 +5,7 @@ import './VideoRow.css';
 function VideoRow({id,views, subs, description,timestamp, channel, title, image}) {
     console.log('videoIs',id)
     const api = 'DNU'
-    // useEffect(()=>{
-    //     setVideoId(id)
-    // },[videoId])
-    // console.log('videoIs',videoId)
+   
     return (
         <div className="videoRow">
             <Link to={{pathname:`/play/${id}`,state:{videoId:id, title:title, views:views,timestamp:timestamp,api }}}>
